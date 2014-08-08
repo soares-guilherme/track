@@ -16,5 +16,25 @@ p{margin: 0.6em 0;}/*ajustando a margem de altura do P*/
 p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
 
 .topo{
-    
+    background: #D20000;
+    color: #fff;
+    font-size: 70%;
+    line-height: 2.5em;
+    text-align: center;
+    white-space: nowrap; /*para não quebrar caso o container dele fique menor que o tamanho do texto*/
+    overflow: hidden; /*caso o texto seja maior que a div verticalmente, não aparecerá barra de rolagem*/
+}
+.navegacao{background: #fff;}
+.principal{background: #E8E8E8;}
+.principal header, .auxiliar h1{text-align: center; color:#830000;}
+
+.bloco, .auxiliar article{
+    border-bottom: 1px solid #5E5E5E;
+    padding: 0.8em 0;
+}
+.auxiliar{background: #fff;}
+.rodape{
+    background: #D5D2D2;
+    color: #646060;
+    text-align: center;
 }
