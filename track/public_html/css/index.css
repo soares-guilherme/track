@@ -12,6 +12,7 @@ body{font: 100%/1.4 sans-serif;background:#ccc;}/*line-height padrão de 1.4*/
 h1,h2{font-weight: bold;}
 h1{font-size: 140%;}
 h2{font-size: 120%;}
+h3{font-size: 120%;}
 p{margin: 0.6em 0;}/*ajustando a margem de altura do P*/
 p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
 
@@ -24,10 +25,15 @@ p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
     white-space: nowrap; /*para não quebrar caso o container dele fique menor que o tamanho do texto*/
     overflow: hidden; /*caso o texto seja maior que a div verticalmente, não aparecerá barra de rolagem*/
 }
+.topo img{
+        width: 200px;
+        height: auto;
+            
+    }
 .navegacao{background: #fff;}
 .principal{background: #E8E8E8;}
 .principal header, .auxiliar h1{text-align: center; color:#830000;}
-
+.principal h2{display: none;}
 .bloco, .auxiliar article{
     border-bottom: 1px solid #5E5E5E;
     padding: 0.8em 0;
@@ -76,19 +82,25 @@ a:hover{text-decoration: underline; color: #6d6868;}
 @media all and (min-width: 30em){ /*no minimo 480px*/
     body{
         background-color: #fff;
-        /* background-image: url();*bg1000x80cap3*/
+       /* background-image: url();*/
         /* background-repeat: no-repeat*/
         /* background-position: ; left top*/
+    }
+    .topo img{
+        float: left;
     }
     .topo h1{
         font-size: 250%;
         margin: 0.6em 0;
     }
+   
+    
     .principal{
         width: 70%;
         padding: 0 .5em;
         float: right;
     }
+    .principal h2{display: block;}
     .auxiliar{
         width: 70%;
         float: right;
@@ -109,3 +121,17 @@ a:hover{text-decoration: underline; color: #6d6868;}
        
     }
 }
+
+
+/*
+.topo img{
+        position: absolute;
+        width: 386px;
+        height: auto;
+        left: 0;
+    }
+    .topo h1{
+        font-size: 250%;
+        margin: 1.6em 0;
+    }
+    */
