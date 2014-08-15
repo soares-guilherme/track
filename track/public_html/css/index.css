@@ -12,30 +12,38 @@ body{font: 100%/1.4 sans-serif;background:#ccc;}/*line-height padrão de 1.4*/
 h1,h2{font-weight: bold;}
 h1{font-size: 140%;}
 h2{font-size: 120%;}
-h3{font-size: 120%;}
+h3{font-size: 110%;}
+label{font-size: 110%;}
+input{font-size: 110%; height: 50px;}
+select{height: 50px;}
 p{margin: 0.6em 0;}/*ajustando a margem de altura do P*/
 p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
 
 .topo{
     background: #D20000;
     color: #fff;
-    font-size: 70%;
+    font-size: 120%;
     line-height: 2.5em;
     text-align: center;
     white-space: nowrap; /*para não quebrar caso o container dele fique menor que o tamanho do texto*/
     overflow: hidden; /*caso o texto seja maior que a div verticalmente, não aparecerá barra de rolagem*/
 }
 .topo img{
-        width: 200px;
-        height: auto;
-            
-    }
+    width: 200px;
+    height: auto;
+
+}
+
 .navegacao{background: #fff;}
 .principal{background: #E8E8E8;}
 .principal header, .auxiliar h1{text-align: center; color:#830000;}
 .principal h2{display: none;}
+.bloco{padding: 0.3em 0;}
 .bloco, .auxiliar article{
     border-bottom: 1px solid #5E5E5E;
+
+}
+.auxiliar article{
     padding: 0.8em 0;
 }
 .auxiliar{background: #fff;}
@@ -67,22 +75,22 @@ a:hover{text-decoration: underline; color: #6d6868;}
     height: 2.8em;
     overflow: hidden;/*faz com que o conteúdo do container  do menu que está abaixo da altura reduzida fique escondido e não vaze*/
     -webkit-transition:height 2s;
-        -moz-transition: height 2s;
-            -ms-transition: height 2s;
-                -o-transition: height 2s;
+    -moz-transition: height 2s;
+    -ms-transition: height 2s;
+    -o-transition: height 2s;
 }
 .navegacao:hover, .navegacao:focus, .navegacao:active{
-    height: 20em;
+    height: 13em;
     -webkit-transition:height 2s;
-        -moz-transition: height 2s;
-            -ms-transition: height 2s;
-                -o-transition: height 2s;
+    -moz-transition: height 2s;
+    -ms-transition: height 2s;
+    -o-transition: height 2s;
 }
 
 @media all and (min-width: 30em){ /*no minimo 480px*/
     body{
         background-color: #fff;
-       /* background-image: url();*/
+        /* background-image: url();*/
         /* background-repeat: no-repeat*/
         /* background-position: ; left top*/
     }
@@ -90,25 +98,27 @@ a:hover{text-decoration: underline; color: #6d6868;}
         float: left;
     }
     .topo h1{
-        font-size: 250%;
+        /*font-size: 250%;*/
         margin: 0.6em 0;
     }
-   
-    
+
+
     .principal{
         width: 70%;
-        padding: 0 .5em;
+        padding: 0.5em;
         float: right;
     }
-    .principal h2{display: block;}
+
     .auxiliar{
         width: 70%;
+        padding: 0.5em;
         float: right;
     }
     .navegacao{
         float: left;
         width: 30%;
         height: 30em;
+        padding: 0 0.1em;
     }
     .navegacao li:first-child{border-top:1px solid #fff;}
     .menu-icon{
@@ -117,21 +127,63 @@ a:hover{text-decoration: underline; color: #6d6868;}
         line-height: 0;
     }
     .rodape{
-    float:right;
-       
+        float:right;
+
     }
 }
-
-
-/*
-.topo img{
+@media all and (min-width: 65.5em ){
+    .topo img{
         position: absolute;
-        width: 386px;
-        height: auto;
         left: 0;
+        width: 256px;
+        height: auto;
+
     }
     .topo h1{
         font-size: 250%;
-        margin: 1.6em 0;
+        margin: 0.8em 0;
     }
-    */
+    .principal{
+        width: 60%;
+        float: left;
+        padding: 1em 0.5em;
+    }
+    .principal header{
+        margin-bottom: 0.3em;
+    }
+    .principal h2{display: block;}
+    .bloco{
+        padding: 0.5em 0;
+    }
+    .auxiliar{
+        width: 25%;
+        padding: 0 0.4em;
+    }
+    .navegacao{
+        width: 15%;
+        padding: 0 0.1em;
+    }
+}
+@media all and (min-width: 75em ){
+    .topo img{
+        width: 283px;
+    }
+    .tudo{
+        max-width: 100em;
+        margin: 0 auto;
+    }
+    .principal{
+        width: 57%;
+        margin: 0 1.5%;
+    }
+    .rodape{
+        line-height: 3em;
+    }
+    .principal header{
+        border: 1px solid #cecfd4;
+        border-radius: 0.5em;
+    }
+    .bloco{
+        margin-bottom: 1em;
+    }
+}
