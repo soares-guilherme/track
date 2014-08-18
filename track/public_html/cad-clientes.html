@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Track System Intersul</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/meyer.css"/> 
+        <link rel="stylesheet" type="text/css" href="./css/index.css"/> 
+        <!--[if lt IE9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+        <![endif]-->
+    </head>
+    <body id="home">
+        <div class="tudo">
+            <header>
+                <div class="topo">
+                    <img src="./img/logo.png">
+                    <h1>Intersul Auto Tracking</h1>   
+                </div>
+            </header>
+            <nav class="navegacao" aria-haspopup="true"><!--aria-haspopup="true" faz o IE10 reconhecer o hover como toque em celulares -->
+                <h2 class="menu-icon" onclick="void(0)">Menu <span>&equiv;</span></h2>
+                <ul class="menu">
+                    <li><a href="rastreamento.html" class="rastreamento">Rastreamento</a></li>
+                    <li><a href="index.html" class="cad-pocesso">Cad. de Processo</a></li>
+                    <li><a href="cad-clientes.html" class="cad-clientes">Cad. de Clientes</a></li>
+                    <li><a href="cad-usuarios.html" class="cad-usuarios">Cad. de Usuários</a></li>
+                    <li><a href="cad-usuarios.html" class="cad-usuarios">Cad. de Fronteira</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-page cf"> <!--Conteúdo principal da Página-->
+                <section class="principal">
+                    <header>
+                        <hgroup>
+                            <h1>Cadastro de Clientes</h1>
+                            <h2></h2>
+                        </hgroup>
+                    </header>
+                    <div class="bloco">
+                        <h3>Nome:</h3>
+                        <input type="text">
+                        <h3>CNPJ:</h3>
+                        <input type="text">
+                        <h3>End:</h3>
+                        <input type="text">
+                        <h3>N°:</h3>
+                        <input type="text">
+                        <h3>Cidade:</h3>
+                        <input type="text">
+                        <label>Estado:</label>
+                        <select id="estado">
+                            <option value="#">RS</option>
+                            <option value="#">SP</option>
+                            <option value="#">RJ</option>
+                        </select> 
+                        <h3>País:</h3>
+                        <input type="text">
+                        <h3>Fone:</h3>
+                        <input type="text">
+                        <h3>Responsável:</h3>
+                        <input type="text">
+                        <h3>Email do responsável:</h3>
+                        <input type="text">
+                    </div>
+                    <div class="bloco">
+                        <label>Estado:</label>
+                        <select id="estado">
+                            <option value="#">RS</option>
+                            <option value="#">SP</option>
+                            <option value="#">RJ</option>
+                        </select> 
+                    </div>
+                </section>
+                <aside class="auxiliar">
+                    <h1>Noticias Comex</h1>
+                    <article>
+                        <header>
+                            <h2>Suspensão do IPI Automotivo</h2>
+                            <small>Sexta-feira, 8 de Agosto de 2014.</small>
+                        </header>
+                        <p>RF anuncia suspensão do IPI automotivo até final de 2015</p>
+                    </article>
+                    <article>
+                        <header>
+                            <h2>Peixe chinês atento!</h2>
+                            <small>Sexta-feira, 10 de Agosto de 2014.</small>
+                        </header>
+                        <p>Anvisa deve fazer anuência do peixe de origem chinesa a partir de outubro de 2014,
+                            Importadores sob pressão para se adequar as normas rispidas.
+                        </p>
+                    </article>
+                </aside>
+            </main>
+
+            <footer class="rodape">
+                <small>Auto Tracking Intersulservicesltda Copyright 2014 Todos os direitos reservados Be Mobile</small>
+            </footer>
+
+        </div><!-- /.tudo -->
+    </body>
+</html>
