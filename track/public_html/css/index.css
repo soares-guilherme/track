@@ -58,17 +58,17 @@ p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
     float: left;
     line-height: 50px;
     margin-right: 1%;
-    
+
 
 
 }
 .usuarios li.campo1{
     width: 50%;
-    
+
 }
 .usuarios li.botoes{
     width: 12%;
-    
+
 }
 .usuarios li:last-child{
     margin-right: 0;
@@ -85,7 +85,7 @@ p:last-child{margin-bottom: 0; padding-bottom: 0.6em;}
     overflow: hidden;
 }
 
-ul .campo3, .campo4{
+ul .campo3, .campo4, .campo5, .campo6, .campo7{
     display: none;/*----------------------------------------------------------------*/
 }
 
@@ -114,6 +114,7 @@ a .botao{
     font-size: 200%;
     line-height: 32px;
     border: 1px solid #fff;
+    color:#fff;
 }
 a .edit{
     background-image: url(../img/botoes/ediitar.png);
@@ -255,15 +256,15 @@ a:hover{text-decoration: underline; color: #6d6868;}
     .navegacao{
         margin-left: 1%;width: 13%;}
     .main-page{
-        
+
         width: 85%;        
     }
     .usuarios ul:last-child{
         margin-bottom: 85px;
     }
-        .comandos{
-            width: 85%;
-            bottom: 40px;
+    .comandos{
+        width: 85%;
+        bottom: 40px;
     }
     .rodape{
         height: 40px;
@@ -272,32 +273,42 @@ a:hover{text-decoration: underline; color: #6d6868;}
     }
     .rodape span{display: inline;}
     .rodape span:first-child{display: inline;}
-    
+
     .usuarios li{
-    margin-right: 0;
-    width: 20%;/*-------------------------------------------------------------------*/
+        margin-right: 1%;
+        width: 10%;/*-------------------------------------------------------------------*/
+    }
+    .usuarios li select{
+        width: 100%;
+        height: 49px;
+        display: inherit;
+        background-color: inherit;
+        border: 1px solid #8f8f8f;
     }
     .usuarios li.campo1{
-    width: 20%;
-}
+        width: 15%;/**********************************************************************/
+    }
+    .usuarios li.campo4{
+        width: 5%;
+    }
     .usuarios li.botoes{
-    width: 12%;
+        width: 12%;/**********************************************************************/
+    }
+    ul .campo3, .campo4, .campo5, .campo6, .campo7 {
+        display: block;
+    }
+
 }
-ul .campo3, .campo4{
-    display: block;
-}
-    
-}
-   /* ul .email, .senha{
-    display: block;/*----------------------------------------------------------------*/
+/* ul .email, .senha{
+ display: block;/*----------------------------------------------------------------*/
 /*}
 .usuarios li.nome {
     width: 15%;
 .usuarios li{
     width: 15%;/*-------------------------------------------------------------------*/
 
-    
-    
+
+
 
 /*
 @media all and (min-width: 65.5em ){
